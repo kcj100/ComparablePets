@@ -76,9 +76,7 @@ public class ApplicationTest {
 
         animals.add(cat);
         animals.add(dog);
-
-        MyComparator typeComparator = new MyComparator();
-        animals.sort(typeComparator);
+        cat.compareTo(dog);
 
         assertThat(animals.get(0)).isEqualTo(cat);
         assertThat(animals.get(1)).isEqualTo(dog);
